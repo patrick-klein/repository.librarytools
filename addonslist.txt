@@ -1,0 +1,2 @@
+~/repository.librarytools/
+https://github.com/patrick-klein/script.library.integration.tool#master
