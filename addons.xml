@@ -14,4 +14,44 @@
     <source>https://github.com/patrick-klein/repository.librarytools</source>
   </extension>
 
+</addon><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="xbmc.addon" version="12.0.0" />
+    <import addon="script.module.beautifulsoup4" version="1.0.0" />
+    <import addon="script.module.simplejson" version="1.0.0" />
+  </requires>
+
+  <extension library="default.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="context.py">
+        <label>32000</label>
+        <visible>String.StartsWith(ListItem.Path,plugin) + !Container.Content(addons)</visible>
+      </item>
+      <item library="context2.py">
+        <label>32001</label>
+        <visible>String.StartsWith(ListItem.Path,plugin) + !Container.Content(addons)</visible>
+      </item>
+    </menu>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Allows video add-on content to be integrated into your library.</summary>
+    <description lang="en">
+      See README for full description.
+    </description>
+    <disclaimer lang="en">
+      Must choose a Managed Folder in settings before running
+    </disclaimer>
+    <language />
+    <platform>osx linux</platform>
+    <license>GPL v2.0</license>
+    <forum />
+    <website />
+    <source>https://github.com/patrick-klein/script.library.integration.tool</source>
+  </extension>
 </addon></addons>
