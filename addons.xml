@@ -1,5 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.1.0">
+<addons><addon id="repository.librarytools" name="Library Tools repository" provider-name="patrick-klein" version="1.0.0">
+
+  <extension name="Library Tools repository" point="xbmc.addon.repository">
+    <info compressed="false">https://raw.githubusercontent.com/patrick-klein/repository.librarytools/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/patrick-klein/repository.librarytools/master/addons.xml.md5</checksum>
+    <datadir>https://raw.githubusercontent.com/patrick-klein/repository.librarytools/master/</datadir>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kodi repository for Library Integration Tool</summary>
+    <description lang="en">Kodi repository for Library Integration Tool</description>
+    <platform>all</platform>
+  </extension>
+
+</addon><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.1.0">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
     <import addon="xbmc.addon" version="12.0.0" />
@@ -39,4 +53,14 @@
     <website />
     <source>https://github.com/patrick-klein/script.library.integration.tool</source>
   </extension>
+
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshot-01.jpg</screenshot>
+    <screenshot>resources/screenshot-02.jpg</screenshot>
+    <screenshot>resources/screenshot-03.jpg</screenshot>
+  </assets>
+  <news>Initial Release</news>
+
 </addon></addons>
