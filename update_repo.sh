@@ -1,9 +1,4 @@
-#git pull
+#!/bin/bash
 
-python update_repo.py repository.librarytools
-
-#./update-directory-structure.sh
-
-#git add .
-#git commit -a -m "update repo"
-#git push
+python update_repo.py
+./update-directory-structure.sh

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.librarytools" name="Library Tools repository" version="1.0.0" provider-name="patrick-klein">
+
+  <extension name="Library Tools repository" point="xbmc.addon.repository">
+    <info compressed="false">https://raw.githubusercontent.com/patrick-klein/repository.librarytools/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/patrick-klein/repository.librarytools/master/addons.xml.md5</checksum>
+    <datadir>https://raw.githubusercontent.com/patrick-klein/repository.librarytools/master/</datadir>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kodi repository for Library Integration Tool</summary>
+    <description lang="en">Kodi repository for Library Integration Tool</description>
+    <platform>all</platform>
+  </extension>
+
+</addon>
