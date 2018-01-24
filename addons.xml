@@ -13,7 +13,7 @@
     <platform>all</platform>
   </extension>
 
-</addon><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.1.0">
+</addon><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.2.0">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
     <import addon="xbmc.addon" version="12.0.0" />
@@ -47,20 +47,28 @@
       Must choose a Managed Folder in settings before running
     </disclaimer>
     <language />
-    <platform>osx linux</platform>
+    <platform>all</platform>
     <license>GPL v2.0</license>
     <forum />
     <website />
     <source>https://github.com/patrick-klein/script.library.integration.tool</source>
-  </extension>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshot-02.jpg</screenshot>
+      <screenshot>resources/screenshot-03.jpg</screenshot>
+    </assets>
+    <news>
+      v0.2.0 (2018-1-24)
+      - Windows support
+      - new icon
+      - check if managed directory exists when first called
+      - various improvements
 
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-    <screenshot>resources/screenshot-01.jpg</screenshot>
-    <screenshot>resources/screenshot-02.jpg</screenshot>
-    <screenshot>resources/screenshot-03.jpg</screenshot>
-  </assets>
-  <news>Initial Release</news>
+      v0.1.0 (2018-1-22)
+      - Initial release
+    </news>
+  </extension>
 
 </addon></addons>
