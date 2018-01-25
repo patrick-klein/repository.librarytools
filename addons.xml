@@ -13,7 +13,7 @@
     <platform>all</platform>
   </extension>
 
-</addon><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.2.0">
+</addon><addon id="script.library.integration.tool" name="Library Integration Tool" provider-name="patrick-klein" version="0.2.1">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
     <import addon="xbmc.addon" version="12.0.0" />
@@ -60,6 +60,10 @@
       <screenshot>resources/screenshot-03.jpg</screenshot>
     </assets>
     <news>
+      v0.2.1 (2018-1-25)
+      - fix for items with quotes in name
+      - fix for renaming thumbnails for episodes
+
       v0.2.0 (2018-1-24)
       - Windows support
       - new icon
